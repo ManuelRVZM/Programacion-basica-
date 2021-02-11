@@ -1,0 +1,25 @@
+
+<html>
+<head>
+	<title>Calcula tu peso en otro planeta</title>
+	<style> 
+
+	</style>
+</head>
+	<body>
+		<!--Peso nuevo = gravedad * peso % 9,8-->
+		<h1> Calcula tu peso en otro planeta </h1>
+		<p> Si vivieras fuera de la Tierra, tu peso sería distinto.¡Descubre cuánto pesarías en otros planetas!</p>
+		<script>
+		var usuario = prompt("¿Cuál es tu peso?");
+		var peso = parseInt(usuario);
+		var peso_t = 9.8;
+		var peso_m = 3.7;	
+		var peso_j = 24.8;
+		var peso_final;
+		peso_final = peso * peso_m / peso_t;
+		peso_final = (peso_final.toFixed(2));
+		document.write("Tu peso en Marte es <strong>" + peso_final + " kilos</strong>");
+		</script>
+	</body>
+</html>
